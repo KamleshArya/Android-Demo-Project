@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kamlesh.androidminiproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.kamlesh.androidminiproject.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.kamlesh.androidminiproject.SecondActivity" >
+        </activity>
+
+        <service android:name="com.kamlesh.androidminiproject.ServiceDemo" >
+        </service>
+
+        <activity
+            android:name="com.kamlesh.androidminiproject.LayoutActivity"
+            android:label="@string/title_activity_layout" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.LayoutUpdate"
+            android:label="@string/title_activity_layout_update" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.CustomTextViewDemo"
+            android:label="@string/title_activity_custom_text_view_demo" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.TextViewDemo"
+            android:label="@string/title_activity_text_view_demo" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.FormDemo"
+            android:label="@string/title_activity_form_demo" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.ImageButton"
+            android:label="@string/title_activity_image_button" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.CheckBoxDemo"
+            android:label="@string/title_activity_check_box_demo" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.Spinner"
+            android:label="@string/title_activity_spinner" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.ProgressBar"
+            android:label="@string/title_activity_progress_bar" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.SeekBar"
+            android:label="@string/title_activity_seek_bar" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.FlingDemo"
+            android:label="@string/title_activity_fling_demo" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.MenuDemo1"
+            android:label="@string/title_activity_menu_demo1" >
+        </activity>
+        <activity android:name="com.kamlesh.androidminiproject.MenuClassSetting" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.AlertDialogBox"
+            android:label="@string/title_activity_alert_dialog_box" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.SharedPreferences"
+            android:label="@string/title_activity_shared_preferences" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.PreferencesFramework"
+            android:label="@string/title_activity_preferences_framework" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.UIChangeUsingSharedPreferences"
+            android:label="@string/title_activity_uichange_using_shared_preferences" >
+        </activity>
+        <activity android:name="com.kamlesh.androidminiproject.UIChangeHelperClass" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.FileOperationsWrite"
+            android:label="@string/title_activity_file_operations" >
+        </activity>
+        <activity android:name="com.kamlesh.androidminiproject.FileOperationsRead" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.SQLiteDemo"
+            android:label="@string/title_activity_sqlite_diary_demo" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.NotificationDemo"
+            android:label="@string/title_activity_notification_demo" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.AlarmDemo"
+            android:label="@string/title_activity_alarm_demo" >
+        </activity>
+
+        <receiver android:name="com.kamlesh.androidminiproject.AlarmReceiver" >
+        </receiver>
+
+        <activity
+            android:name="com.kamlesh.androidminiproject.TelephonyDemo"
+            android:label="@string/title_activity_telephony_demo" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.CallDemo"
+            android:label="@string/title_activity_call_demo" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.PhoneUtilityDemo"
+            android:label="@string/title_activity_phone_utility_demo" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.InterceptDemo"
+            android:label="@string/title_activity_intercept_demo" >
+        </activity>
+
+        <receiver android:name="com.kamlesh.androidminiproject.InterceptorHelperOutgoingCall" >
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.kamlesh.androidminiproject.SMSSendDemo"
+            android:label="@string/title_activity_smssend_demo" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.SMSReceiverDemo"
+            android:label="@string/title_activity_smsreceiver_demo" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.SMSReceiverHelper"
+            android:label="@string/title_activity_smsreceiver_helper" >
+        </activity>
+
+        <receiver android:name="com.kamlesh.androidminiproject.SMSReceiverDemo" >
+            <intent-filter>
+                <action android:name="android.kamlesh.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.kamlesh.androidminiproject.ImageDemo"
+            android:label="@string/title_activity_image_demo" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.AudioDemo"
+            android:label="@string/title_activity_audio_demo" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.RecordAudioDemo"
+            android:label="@string/title_activity_record_audio_demo" >
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.LocationDemo"
+            android:label="@string/title_activity_location_demo" >
+           
+        </activity>
+        <activity
+            android:name="com.kamlesh.androidminiproject.ForwardGeoCoderDemo"
+            android:label="@string/title_activity_forward_geo_coder_demo" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
